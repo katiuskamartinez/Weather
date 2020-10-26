@@ -1,4 +1,3 @@
-import apiweather from "./apikey.js";
 const $form=document.getElementById("form"),
 $loader=document.querySelector(".loader"),
 $error=document.querySelector(".error"),
@@ -17,7 +16,7 @@ export default  function getData(){
             //variable para almacenar codigo html en formato template-string
             $datos="",
             
-            url=`http://api.openweathermap.org/data/2.5/weather?q=${ciudadValue},${paisValue}&appid=${apiweather.apikey}&units=metric`,    
+            url=`http://api.openweathermap.org/data/2.5/weather?q=${ciudadValue},${paisValue}&appid=a4fae39b155836fbd29442ff4b77910f&units=metric`,    
             res=await fetch(url),
             json=await res.json();
             //console.log(res);
