@@ -16,7 +16,7 @@ export default  function getData(){
             //variable para almacenar codigo html en formato template-string
             $datos="",
             
-            url=`http://api.openweathermap.org/data/2.5/weather?q=${ciudadValue},${paisValue}&appid=a4fae39b155836fbd29442ff4b77910f&units=metric`,    
+            url=`https://api.openweathermap.org/data/2.5/weather?q=${ciudadValue},${paisValue}&appid=a4fae39b155836fbd29442ff4b77910f&units=metric`,    
             res=await fetch(url),
             json=await res.json();
             //console.log(res);
@@ -36,7 +36,7 @@ export default  function getData(){
                 $loader.style.display="none";
                 $tiempo.innerHTML=$datos;   
             }catch (err) {   
-                console.log("error"); 
+                //console.log("error"); 
                 let message=err.statusText || "ocurrio un error";
                 $error.innerHTML=`<p>error:${err.status} ${message} </p>`;  
                 $loader.style.display="none";   
