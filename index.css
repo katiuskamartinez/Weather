@@ -1,136 +1,169 @@
-:root{
-    margin: 0;
-    padding: 0; 
+:root {
+  margin: 0;
+  padding: 0;
 }
-html{
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    box-sizing: border-box; 
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-image: url(./assets/john-fowler-aaIN3y2zcMQ-unsplash.jpg);
+  background-size: 1440px 1200px;
+  background-repeat: no-repeat;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-/*///////////style para el Hora*/ 
-.hora{
-    margin-top: 20px;
-    margin-left:100px;
+/*///////////style para el Hora*/
+.hora {
+  margin-top: 20px;
+  margin-left: 100px;
 }
-.hora i{
-    font-size: 50px;
-    color: yellow;
+.hora h3 {
+  font-size: 25px;
 }
-.hora h3{
-    font-size: 25px;
+/*///////////style para el Titulo*/
+.titulo {
+  text-align: center;
+  font-weight: 400px;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
- /*///////////style para el Titulo*/ 
-.titulo{
-   text-align: center;
-   font-weight: 300px;
-   margin-bottom: 30px;
+.titulo i {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.3);
+  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3);
 }
-.titulo i{
-    font-size: 50px;
+/*///////////style para el Formulario*/
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 300px;
+  height: 250px;
+  padding: 20px;
 }
- /*///////////style para el Formulario*/ 
-.form{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   background-color: #d3c09a;
-   border-radius: 3px;
-   margin: auto;
-   width: 300px;
-   padding: 20px;
+.input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  border: 1px;
+  margin: 8px auto;
+  text-align: center;
+  width: 280px;
+  height: 30px;
 }
-.input{
-   margin: 5px;
-   text-align: center;
-   width: 280px;
-   color: #222;
+.form ::placeholder {
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
 }
-.button{
-    background-color: #eebb4d;
-    border-radius: 3px;
-    border-color:#eebb4d ;
-    margin: auto;
-    width: 200px;
+.button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  border: 1px;
+  margin: 15px auto;
+  width: 200px;
+  height: 50px;
 }
- /*///style para Estado del Tiempo/Respuesta API*/ 
- .tiempo{
-    margin-top: 50px;
-    text-align: center;
-    background-color:  #d3c09a;
+/*///style para Estado del Tiempo/Respuesta API*/
+.tiempo {
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 350px;
+  margin: 15px auto;
 }
-.tiempo h2 i{
-    size: 5px;
+.tiempo h2 i {
+  size: 5px;
 }
-.tiempo h3 b{
-    font-size: 25px;
+.tiempo h3 b {
+  font-size: 25px;
 }
-.tiempo hr{
-    width: 250px;
-    color: #0000;
-    font-weight: normal;
+.tiempo hr {
+  width: 250px;
+  color: rgba(255, 255, 255, 0.1);
 }
 /* loader*/
-.loader{
-    display: none;
-    margin: auto;
+.loader {
+  display: none;
+  margin: auto;
 }
 /*///tema-oscuro btn///*/
-.tema-oscuro-btn{
-    position: fixed;
-    bottom: 1vh;
-    left: 1vw;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: #f7df1e;
-    color: #222;
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-    transition: all 0.3s ease-out;
+.tema-oscuro-btn {
+  position: fixed;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #ede28a;
+  color: #222;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
 }
-.tema-oscuro-btn:hover{
-    background-color: #222;
-    color: #f7df1e; 
+.tema-oscuro-btn:hover {
+  background-color: #222;
+  color: #f7df1e;
 }
-.modo-oscuro{
-    background-color:#222;
-    color: cornsilk;   
+.modo-oscuro {
+  background-image: url(./assets/felix-rottmann-kDKy9jCeNho-unsplash.jpg);
+  background-size: 1440px 1000px;
+  background-repeat: no-repeat;
+  color: cornsilk;
 }
-@media(max-width: 400px){
-.form{
+@media (max-width: 400px) {
+  .form {
     width: 200px;
     padding: auto;
-}
-.input{
+  }
+  .input {
     width: 180px;
     margin: auto;
-}
-.button{
+  }
+  .button {
     width: 100px;
-}
-.tiempo h2 i{
+  }
+  .tiempo h2 i {
     size: 2px;
-}
-.tiempo h3 strong{
+  }
+  .tiempo h3 strong {
     font-size: 16px;
-}
-.hora h3{
+  }
+  .hora h3 {
     font-size: 16px;
-}
-.hora i{
-    font-size: 15px; 
-}
-.tema-oscuro-btn{
+  }
+  .hora i {
+    font-size: 15px;
+  }
+  .tema-oscuro-btn {
     font-size: 1rem;
     width: 2rem;
     height: 2rem;
-}
+  }
 }
